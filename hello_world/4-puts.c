@@ -1,5 +1,6 @@
 #include<stdio.h>
-/*
+
+/**
  * main - function that prints the input given and return
  * Return: zero
  */
