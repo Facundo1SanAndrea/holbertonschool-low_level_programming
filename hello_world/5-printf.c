@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *  printf - command that prints the input given
+ *  main - command that prints the input given
  * Return : zero
  */
 
