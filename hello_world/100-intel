@@ -1,0 +1,8 @@
+#include<stdio.h>
+
+/**
+* main - scirpt intel
+* Return: 0
+*/
+
+gcc -S -masm=intel $CFILE > c
