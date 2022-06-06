@@ -2,7 +2,7 @@
 
 /**
  *  main - command that prints the input given
- *  return: zero
+ *  Return: zero
  */
 
 int main(void)
