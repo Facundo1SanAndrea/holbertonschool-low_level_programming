@@ -3,7 +3,8 @@
  * main - prints the alphabet
  * Return: zero
  */
-int main(void)
+
+int main()
 {
 	char alph;
 
