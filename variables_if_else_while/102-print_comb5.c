@@ -15,7 +15,7 @@ int main(void)
 		{
 			for (i3 = 0; i3 < 10; i3++)
 			{
-				for (i4 = 0; i4 < 10; i4++)
+				for (i4 = 1; i4 < 10; i4++)
 				{
 					putchar(i1 + '0');
 					putchar(i2 + '0');
@@ -23,7 +23,7 @@ int main(void)
 					putchar(i3 + '0');
 					putchar(i4 + '0');
 
-					if (i1 == 9 && i2 == 8 && i3 == 9 && i4 == 9)
+					if (i1 == 9 && i2 == 9 && i3 == 9 && i4 == 9)
 						continue;
 
 					putchar(',');
