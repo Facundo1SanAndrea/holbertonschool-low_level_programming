@@ -13,9 +13,9 @@ int main(void)
 	{
 		for (i2 = 0; i2 < 10; i2++)
 		{
-			for (i3 = i1 + 1; i3 < 10; i3++)
+			for (i3 = 0; i3 < 10; i3++)
 			{
-				for (i4 = i2 + 1; i4 < 10; i4++)
+				for (i4 = i1 + 1; i4 < 10; i4++)
 				{
 					putchar(i1 + '0');
 					putchar(i2 + '0');
