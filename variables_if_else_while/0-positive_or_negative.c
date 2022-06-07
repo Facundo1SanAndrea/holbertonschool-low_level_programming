@@ -1,11 +1,12 @@
 #include <time.h>
 #include <stdlib.h>
+#include <stdio.h>
 /*
  * main - scritp returns a random number
  * Return: Random number
  */
 
-int main()
+int main(void)
 {
 	int n;
 	
