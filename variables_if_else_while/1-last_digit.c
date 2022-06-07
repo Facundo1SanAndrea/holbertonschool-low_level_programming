@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- *  main - script that assign a random number to the variable n each time it is executed
+ *  main - script that assign a random number to the variable.
  *  Return: is zero
  */
 
@@ -29,5 +29,5 @@ int main(void)
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastdig);
 	}
 
-	return(0);
+	return (0);
 }
