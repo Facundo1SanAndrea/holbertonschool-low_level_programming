@@ -4,7 +4,7 @@
  * Return: zero
  */
 
-int main()
+int main(void)
 {
 	char alph;
 
@@ -12,7 +12,7 @@ int main()
 	{
 		putchar(alph);
 	}
-	putchar("\n");
+	putchar('\n');
 
 	return(0);
 }
