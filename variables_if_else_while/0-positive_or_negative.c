@@ -5,7 +5,7 @@
  * Return: Random number
  */
 
-int main(void)
+int main()
 {
 	int n;
 	
