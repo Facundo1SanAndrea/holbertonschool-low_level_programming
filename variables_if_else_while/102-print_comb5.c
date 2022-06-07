@@ -9,13 +9,13 @@ int main(void)
 {
 	int i1, i2, i3, i4;
 
-	for (i1 = 0; i1 < 10; i1++)
+	for (i1 = 0; i1 <= 9; i1++)
 	{
-		for (i2 = 0; i2 < 10; i2++)
+		for (i2 = 0; i2 <= 8; i2++)
 		{
-			for (i3 = 0; i3 < 10; i3++)
+			for (i3 = 0; i3 <= 9; i3++)
 			{
-				for (i4 = i3 + 1; i4 < 10; i4++)
+				for (i4 = 1; i4 <= 9; i4++)
 				{
 					putchar(i1 + '0');
 					putchar(i2 + '0');
