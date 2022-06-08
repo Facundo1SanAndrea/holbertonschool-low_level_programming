@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * int _islower - print c if returs  one
+ * _islower - print c if returs  one
+ * @c: variable to check
  * Return: zero
- * @c
  */
-
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
