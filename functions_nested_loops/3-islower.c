@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * int_islower(int c) - print c if returs  one
+ * int _islower(int c) - print c if returs  one
  * Return: zero
+ * @n
  */
 
 int _islower(int c)
