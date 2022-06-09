@@ -15,17 +15,17 @@ void times_table(void)
 
 		for (num2 = 0; num2 < 10; num2++)
 		{
-			mult= num1 * num2;
+			mult = num1 * num2;
 			if (num2 != 0)
 			{
 				_putchar(' ');
-				
+
 				if (mult < 10)
 				{
 					_putchar(' ');
 				}
 			}
-			
+
 			if (mult >= 10)
 			{
 				_putchar((mult / 10) + '0');
