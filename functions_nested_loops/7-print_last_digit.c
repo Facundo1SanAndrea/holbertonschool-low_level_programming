@@ -4,12 +4,8 @@
  * @c: variable to check
  * Return: zero
  */
-int print_last_digit(int)
+int print_last_digit(int c)
 {
-	scanf ("%d", &num);
-	digit = num % 10;
-	
-	_putchar("%d: %d", num, digit);
-	
-	return (0);
+	c = (c % 10);
+	return (c);
 }
