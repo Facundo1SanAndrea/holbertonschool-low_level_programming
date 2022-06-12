@@ -1,19 +1,26 @@
 #include "main.h"
 
 /**
- *print_triangle - print a triangle
- *@size: number of diagonals
+ * print_triangle - prints a triangle
+ *@size: size of the triangle
+ *
+ * Return: sero
  */
+
 void print_triangle(int size)
 {
-	int count;
-	int space;
+	int x;
+	int y;
 
-	for (count = 1; count <= size; count++)
+	for (x = 1; x <= size; x++)
 	{
-		for (space = size; space <= count; size--)
+		for (y = 1; y <= size; y++)
 		{
-			_putchar('#');
+			if (y <= size - x)
+				_putchar(' ');
+			else
+				_putchar('#');
 		}
+		_putchar('\n');
 	}
 }
