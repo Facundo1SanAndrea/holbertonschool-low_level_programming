@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *print_triangle - triangle
- *@size: diag
+ *print_triangle - print a triangle
+ *@size: number of diagonals
  */
 void print_triangle(int size)
 {
