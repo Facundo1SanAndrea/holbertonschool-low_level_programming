@@ -3,6 +3,7 @@
 /**
  * _puts - pritn string
  * Return: zero
+ * @str: value check
  */
 
 void _puts(char *str)
