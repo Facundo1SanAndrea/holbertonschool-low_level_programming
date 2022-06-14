@@ -2,8 +2,8 @@
 
 /**
  *  swap_int - swap numbers
- *@a - number define
- *@b - define number
+ * @a:number define
+ * @b:define number
  *Return: zero
  */
 
