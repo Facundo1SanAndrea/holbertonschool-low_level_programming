@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * _strcpy - copy and paste
+ *_strcpy - copy and paste
  *@dest: value
  *@src: value
+ *Return: zero
  */
 char *_strcpy(char *dest, char *src)
 {
 	char *start = dest;
 
-	while(*src != '\0')
+	while (*src != '\0')
 	{
 		*dest = *src;
 		dest++;
