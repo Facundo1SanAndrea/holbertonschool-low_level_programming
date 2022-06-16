@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *_strcmp - value
+ *_strcmp - count differ one to other
  *@s1: value
  *@s2: value
- *Return : zero
+ *Return: diff
  */
 
 int _strcmp(char *s1, char *s2)
@@ -15,7 +15,7 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
 		diff = (s1[i] - s2[i]);
-	
+
 		if (diff != 0)
 			break;
 	}
