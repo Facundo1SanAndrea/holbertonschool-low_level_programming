@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- *
- *
+ *_strlen - prints
+ *@c: value
+ *Return: zero
  */
 
 int _strlen(char *s)
@@ -14,9 +15,10 @@ int _strlen(char *s)
 }
 
 /**
- *
- *
- *
+ *_strncat - function string copy paste
+ *@dest: value
+ *@src: value
+ *@n: value
  */
 
 char *_strncat(char *dest, char *src, int n)
