@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *_strlen - prints
- *@c: value
+ *@s: value
  *Return: zero
  */
 
@@ -19,21 +19,22 @@ int _strlen(char *s)
  *@dest: value
  *@src: value
  *@n: value
+ *Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
 	int j, i;
-        int c;
+	int c;
 
 	c = _strlen(src);
-	
-	i=0;
+
+	i = 0;
 	while (dest[i] != '\0')
 	{
 		i++;
 	}
-	
+
 	if (c < n)
 	{
 		for (j = 0; j < c; j++)
