@@ -1,22 +1,28 @@
 #include "main.h"
+#include<string.h>
 /**
- * _strlen - count string
+ *_strlen - count string
  *@s: value
  *Return: c
  */
 
-int strlen(char *s)
+int _strlen(char *s)
 {
-	int i = 0;
+	int c = 0;
 
 	while (s[c] != '\0')
 		c++;
 	return (c);
 }
 
+/**
+ * _strcat - concatenate string
+ *Return: value
+ */
+
 char *_strcat(char *dest, char *src)
 {
-	char *ptr = *dest + strlen(*dest);
+	char *ptr = dest + _strlen(dest);
 
 	while (*src != '\0')
 	{
@@ -24,5 +30,5 @@ char *_strcat(char *dest, char *src)
 	}
 	*ptr = '\0';
 
-	return (*dest);
+	return (dest);
 }
