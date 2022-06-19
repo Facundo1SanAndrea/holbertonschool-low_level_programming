@@ -4,6 +4,7 @@
  *_strspn - gets prefix subs
  *@s: value
  *@accept: value
+ *Return: bytes
  */
 
 unsigned int _strspn(char *s, char *accept)
