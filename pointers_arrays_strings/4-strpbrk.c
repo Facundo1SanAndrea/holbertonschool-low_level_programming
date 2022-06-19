@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strpbkr - value
+ *_strpbrk - value
  *@s: value
  *@accept: value
  *Return: value
