@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *_print_rev_recursion - vale
- *
+ *_print_rev_recursion - prints rev sring
+ *@s: value to checked
  *
  *
  */
