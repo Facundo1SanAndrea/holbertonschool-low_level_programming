@@ -7,7 +7,7 @@
  *Return: zero
  */
 
-int check(int i, int n)
+int check(int n, int i)
 {
 	if (i == 1)
 	{
