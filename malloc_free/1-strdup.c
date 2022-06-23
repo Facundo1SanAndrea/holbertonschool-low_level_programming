@@ -1,5 +1,7 @@
 #include "main.h"
 #include<stdlib.h>
+#include <stddef.h>
+
 /**
  *_strlen - prints number string
  * @s: vlue checked
@@ -36,7 +38,6 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
 	else
 	{
 		while (*prsc != 0)
