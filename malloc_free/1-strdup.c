@@ -32,12 +32,21 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (*prsc != 0)
+	if (result == NULL)
 	{
-		*pdst = *prsc;
-		pdst++;
-		prsc++;
+		return (NULL);
 	}
-	*pdst = '\0';
+
+	else
+	{
+		while (*prsc != 0)
+		{
+			*pdst = *prsc;
+			pdst++;
+			prsc++;
+		}
+		*pdst = '\0';
+	}
 	return (result);
+
 }
