@@ -25,14 +25,17 @@ int _strlen(char *s)
 
 char *_strdup(char *str)
 {
-	char *result = malloc(_strlen(str) + 1);
+	char *result;
 	char *prsc = str;
-	char *pdst = result;
+	char *pdst;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	result = malloc(_strlen(str) + 1);
+	pdst = result;
 
 	if (result == NULL)
 	{
