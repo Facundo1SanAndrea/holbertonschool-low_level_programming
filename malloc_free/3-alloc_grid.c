@@ -3,9 +3,10 @@
 #include <stddef.h>
 
 /**
- *
- *
- *
+ *alloc_grid - function that returns a pointer to a 2 dimensional array.
+ *@width: value
+ *@height: value
+ *Return: zero
  */
 
 int **alloc_grid(int width, int height)
@@ -22,7 +23,7 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		grid [i] = malloc(sizeof(int *) *width);
+		grid[i] = malloc(sizeof(int *) * width);
 		if (grid[i] == NULL)
 		{
 			for (--i; i >= 0; i--)
@@ -31,9 +32,9 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-	
+
 	for (i = 0; i < height; i++)
-		for ( j = 0; j < width; j++)
+		for (j = 0; j < width; j++)
 			grid[i][j] = 0;
 	return (grid);
 }
