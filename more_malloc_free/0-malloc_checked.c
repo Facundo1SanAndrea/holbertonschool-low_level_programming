@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
+#include <limits.h>
 
 /**
  *malloc_checked - return pointer to the allocated memory
