@@ -44,19 +44,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		result[i + j] = '\0';
 		if (n >= n2)
 		{
-			for (i = 0; i < n; i++)
+			for (j = 0; j < n; j++)
 			{
-				result[i] = s2[j];
+				result[i + j] = s2[j];
 			}
+			result[i + j] = '\0';
 		}
-		result[i + j] = '\0';
 		if (n < n2)
 		{	
-		for (j = 0; j < n2; j++)
-		{
-			result[i + j] = s2[j];
-		}
-		result[i + j] = '\0';
+			for (j = 0; j < n2; j++)
+			{
+				result[i + j] = s2[j];
+			}
+			result[i + j] = '\0';
 		}
 	}
 	return (result);
