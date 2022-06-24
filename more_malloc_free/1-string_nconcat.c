@@ -10,23 +10,22 @@
  *@n: value
  *Return: value
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *result;
 	unsigned int i, j, n1, n2;
-	
+
 	if (s1 == NULL)
 	{
-		return ("");
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		return ("");
+		s2 = "";
 	}
+
 	n1 = strlen(s1);
 	n2 = strlen(s2);
-
 	result = malloc(sizeof(char) * n1 + n2 + 4);
 
 	if (result == NULL)
@@ -34,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 	}
 
-	else 
+	else
 	{
 		for (i = 0; i < n1; i++)
 			result[i] = s1[i];
@@ -47,7 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			result[i + j] = '\0';
 		}
 		if (n < n2)
-		{	
+		{
 			for (j = 0; j < n; j++)
 				result[i + j] = s2[j];
 
