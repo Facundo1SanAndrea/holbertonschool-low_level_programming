@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include<stdio.h>
 #include<string.h>
-
 /**
- *_string_nconcat - concatenate string
+ *string_nconcat - concatenate string
  *@s1: value
  *@s2: value
  *@n: value
@@ -23,7 +22,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-
 	n1 = strlen(s1);
 	n2 = strlen(s2);
 	result = malloc(sizeof(char) * n1 + n2 + 4);
@@ -32,7 +30,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
-
 	else
 	{
 		for (i = 0; i < n1; i++)
