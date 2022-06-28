@@ -1,8 +1,8 @@
 #include "dog.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * free_dog - space memory
+ *free_dog - space memory
  *@d: value
  *Return: value
  *
