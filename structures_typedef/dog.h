@@ -1,9 +1,11 @@
+#ifndef main_h
+#define main_h
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
 /**
- *dog - type of the dog
+ *struct dog - type of the dog
  *@name: name
  *@age: age
  *@owner: owner
