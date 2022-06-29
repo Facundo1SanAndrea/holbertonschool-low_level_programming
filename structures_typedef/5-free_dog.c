@@ -2,17 +2,18 @@
 #include <stdlib.h>
 
 /**
- *free_dog - space memory
+ *free_dog - fre the dog
  *@d: value
- *Return: value
- *
+ *Return: zero
  */
-
 void free_dog(dog_t *d)
 {
-	if (d == NULL)
+	if(d == NULL)
 		return;
-	free(d->owner);
-	free(d->name);
-	free(d);
+	else
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
