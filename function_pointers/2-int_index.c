@@ -6,7 +6,7 @@
  *@array: poniet
  *@size: size
  *@cmp: pointer fun
- *@Return: value
+ *Return: value
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
