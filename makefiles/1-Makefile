@@ -3,6 +3,6 @@ CC = gcc -o
 SRC = main.c school.c
 
 school: $(SRC)
-	gcc -o school $(SRC)
+	gcc -o school main.c school.c
 all:
 	
