@@ -6,7 +6,7 @@ RM = rm
 NAME = school
 
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(name)
+	$(CC) $(OBJ) -o $(NAME)
 clean:
 oclean:
 fclean:
