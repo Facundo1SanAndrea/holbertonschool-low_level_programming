@@ -1,0 +1,8 @@
+#Make a file 
+CC = gcc -o
+SRC = main.c school.c
+
+school: $(SRC)
+	gcc -o school $(SRC)
+all:
+	
