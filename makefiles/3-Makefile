@@ -7,7 +7,7 @@ NAME = school
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-clean: $(RM) *~ $(NAME)
-oclean: $(RM) -f $(OBJ)
-fclean: clean oclean
+clean:
+oclean:
+fclean:
 re:
