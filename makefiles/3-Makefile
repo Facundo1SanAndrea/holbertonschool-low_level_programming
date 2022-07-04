@@ -4,10 +4,6 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 RM = rm
 NAME = school
-clean:
-oclean:
-fclean:
-re:
 all:
 school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
