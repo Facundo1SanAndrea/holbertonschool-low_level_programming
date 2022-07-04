@@ -1,8 +1,8 @@
 #Make a file 
-CC = gcc
+CC = gcc -o
 SRC = main.c school.c
 
 school: main.c school.c
-	gcc -o school main.c school.c
+	$(CC) $(SRC) school
 all:
 	
