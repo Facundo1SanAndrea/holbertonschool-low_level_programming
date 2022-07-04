@@ -1,0 +1,12 @@
+#make a file 
+CC: gcc
+SRC: main.c school.c
+OBJ: main.o school.o
+NAME: school
+all: school holberton
+
+school: $(SRC)
+	$(CC) $(SRC) -o school
+
+holberon: $(SRC)
+	$(CC) $(SRC) -o holberton
