@@ -3,6 +3,8 @@ CC = gcc -o
 SRC = main.c school.c
 
 school: main.c school.c
-	$(CC) $(SRC) school
-all:
-	
+	$(CC) $(SRC) -o school
+holberton: main.c school.c
+	$(CC) $(SRC) -o school
+
+all: school holberton
