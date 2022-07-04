@@ -4,10 +4,10 @@ SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 RM = rm
 NAME = school
-all: school
+all: $(NAME)
 
 school: $(OBJ)
-	$(CC) $(OBJ) -o school
+	$(CC) $(OBJ) -o $(name)
 clean:
 oclean:
 fclean:
