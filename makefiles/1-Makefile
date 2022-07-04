@@ -1,5 +1,5 @@
 #Make a file 
-CC = gcc -o
+CC =
 SRC = main.c school.c
 
 school: main.c school.c
