@@ -9,4 +9,4 @@ oclean:
 fclean:
 re:
 all: $(OBJ)
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
