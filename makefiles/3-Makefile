@@ -8,5 +8,5 @@ clean:
 oclean:
 fclean:
 re:
-all: $(OBJ)
+school: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
