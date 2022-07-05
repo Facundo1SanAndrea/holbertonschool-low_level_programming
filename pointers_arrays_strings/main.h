@@ -29,6 +29,7 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 char *_strstr(char *haystack, char *needle);
 void print_diagsums(int *a, int size);
+void print_number(int n);
 
 
 
