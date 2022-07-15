@@ -7,20 +7,20 @@
  *Return: value
  */
 
-listint_t *add_nodeint(listint_t **head, const int num)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *n;
+	listint_t *new;
 
-	n = malloc(sizeof(listint_t));
+	new = malloc(sizeof(listint_t));
 
-	if (n == NULL)
+	if (new == NULL)
 	{
 		return (NULL);
 	}
-	n->num = num;
-	n->next = *head;
+	new->n = n;
+	new->next = *head;
 
-	*head = n;
+	*head = new;
 
 	return (*head);
 }
