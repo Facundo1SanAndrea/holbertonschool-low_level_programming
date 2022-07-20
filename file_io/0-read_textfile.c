@@ -19,15 +19,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		if (p == NULL)
 			return (0);
 
-		o = fopen(filename, O_RDONLY, "o");
-		r = fopen(filename, letters, p);
-		w = fopen(filename, O_RDWR, letters);
+		o = open(filename, O_RDONLY);
+		r = read(o, p, letters);
+		w = write(STDOUT_FILENO, p, r);
 
-		if (r == NULL || w == NULL || o == NULL)
+		if (r == -1 || w == -1 || o == -1)
+		{
+			free(p);
 			return (0);
+		}
 
+		free(p);
+		close(o);
 
-
-
-
+		return (w);
 }
