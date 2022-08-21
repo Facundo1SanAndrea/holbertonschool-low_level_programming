@@ -12,22 +12,20 @@
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned long int hash_function = 0;
+	unsigned long int index = 0;
 
-	if (!ht || !key)
-		return (NULL);
-	hash_function = key_index(key, ht->size);
-	if (ht->array[hash_function])
+	if (ht == NULL || key == NULL)
+		return (0);
+
+	index = key_index((unsigned char *)key, ht->size);
+
+	while (ht->array[index] != NULL)
 	{
-		while (ht->array[hash_function])
-		{
-		if (!strcmp(ht->array[hash_function]->key, key))
+		if (strcmp(key, ht->array[index]->key) == 0)
+			return (ht->array[index]->value);
 
-			return (ht->array[hash_function]->value);
-		ht->array[hash_function] = ht->array[hash_function]->next;
-		}
-
-			return (NULL);
+		ht->array[index] = ht->array[index]->next;
 	}
-	return (NULL);
+
+	return (0);
 }
