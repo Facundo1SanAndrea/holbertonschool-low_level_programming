@@ -1,49 +1,45 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - Write a function that adds an element to the hash table.
- * @ht: is the hash table.
- * @key: is the key.
- * @value: is the value associated with the key
- *
- * Return: 1 if it succeeded, 0 otherwise.
- */
+* hash_table_set - adds an element to the hashtable
+* @ht: hash table to add or update the key/value
+* @key: key, cannot be an empty string
+* @value: value associated with the key
+* Return: 1 on success, 0 otherwise
+*/
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	int hash_function = 0;
-	char *dup_key = NULL, *dup_value = NULL;
-	hash_node_t *new = NULL;
+	unsigned long int index = 0;
+	hash_node_t *current_node = NULL, *new_node = NULL;
 
-	if (!ht || !key || !value)
+	if (key == NULL || ht == NULL)
 		return (0);
 
-	dup_value = strdup(value);
-	dup_key = strdup(key);
+	/*get the position of the element on the table*/
+	index = key_index((unsigned char *)key, ht->size);
 
-	hash_function = key_index(key, ht->size);
-	if (ht->array[hash_function])
+	current_node = ht->array[index];
+
+	/*runs through the array looking for a key match*/
+	for (; current_node; current_node = current_node->next)
 	{
-		if (!(strcmp(ht->array[hash_function]->key, dup_key)))
+		if (strcmp(current_node->key, key) == 0) /*checks if the key matches*/
 		{
-			free(ht->array[hash_function]->key);
-			free(ht->array[hash_function]->value);
-			free(ht->array[hash_function]);
-			ht->array[hash_function] = NULL;
+			free(current_node->value);
+			current_node->value = strdup(value);
+			return (1);
 		}
 	}
 
-	new = malloc(sizeof(hash_node_t));
-	if (!new)
+	new_node = malloc(sizeof(hash_node_t));
+	if (new_node == NULL)
 		return (0);
-	new->key = dup_key;
-	new->value = dup_value;
 
-	if (ht->array[hash_function])
-		new->next = ht->array[hash_function];
-	else
-		new->next = NULL;
-	ht->array[hash_function] = new;
+	new_node->key = strdup(key);
+	new_node->value = strdup(value);
+	new_node->next = ht->array[index];
+	ht->array[index] = new_node;
 
 	return (1);
 }
