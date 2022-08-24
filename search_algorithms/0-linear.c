@@ -1,7 +1,6 @@
 #include "search_algos.h"
 /**
- *linear_search - Given an array arr[] of N elements, i
- the task is to write a function to search a given element x in arr[].
+ *linear_search - search linear and change order
  *@array: array of elements
  *@size: size
  *@value: value
