@@ -1,12 +1,11 @@
 #include "search_algos.h"
-
 /**
- *binary_search - function
- *@array: array
- *@size: size
- *@value: value
- *Return: retu 
- */
+*binary_search - function
+*@array:array
+*@size:size
+*@value:value
+*Return:retu
+*/
 
 int binary_search(int *array, size_t size, int value)
 {
